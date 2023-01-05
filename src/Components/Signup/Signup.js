@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 
 import Logo from '../../olx-logo.png';
 import { FirebaseContext } from '../../store/Context';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './Signup.css';
 
 export default function Signup() {
@@ -86,7 +86,8 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <a>Login</a>
+        <a></a>
+        <Link style={{textDecoration:'none'}} to="/login"> Login </Link>
       </div>
     </div>
   );
